@@ -34,14 +34,16 @@ repos:
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.62.0
     hooks:
+      - id: terraform_validate
       - id: terraform_fmt
+      - id: terraform_tflint
+      - id: terraform_tfsec
+      - id: checkov
       - id: terraform_docs
         args:
           - --hook-config=--path-to-file=README.md
           - --hook-config=--add-to-existing-file=true
           - --hook-config=--create-file-if-not-exist=true
-      - id: terraform_tfsec
-      - id: checkov
   - repo: https://github.com/sirosen/check-jsonschema
     rev: 0.13.0
     hooks:
