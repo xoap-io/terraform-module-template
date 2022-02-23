@@ -1,0 +1,2 @@
+PR_TITLE_REGEX: /((?:[a-z][a-z]+))(-)(\d{4})(:).*/i
+COMMIT_MESSAGE_REGEX: /^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))(:).*/i
