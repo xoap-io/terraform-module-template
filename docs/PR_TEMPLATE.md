@@ -13,7 +13,7 @@
 - [ ] I ran lint checks locally prior to submission.
 - [ ] Have you checked to ensure there aren't other open Pull Requests for the same update/change?
 
-## Description
+## Summary
 
 <!-- Concise description of the problem and the solution or the feature being added -->
 
