@@ -2,7 +2,7 @@
 
 ## Module naming
 
-terraform-<PROVIDER>-<NAME> eg. terraform-aws-ec2
+terraform-PROVIDER-NAME eg. terraform-aws-ec2
 
 ## Release Tags
 
@@ -40,11 +40,11 @@ Must have subscriptions and type declarations.
 
 ## Nested modules
 
-Nested modules should exist under the modules/ subdirectory. Any nested module with a README.md is considered usable by an external user. If a README doesn't exist, it is considered for internal use only.
+Nested modules should exist under the modules/ subdirectory. Any nested module with a README.md is considered usable by an external user. If a README.md doesn't exist, it is considered for internal use only.
 
 ## Examples
 
-Examples of using the module should exist under the examples/ subdirectory at the root of the repository. Each example may have a README to explain the goal and usage of the example.
+Examples of using the module should exist under the examples/subdirectory at the root of the repository. Each example may have a README.md to explain the goal and usage of the example.
 
 ## Providers
 

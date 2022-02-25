@@ -1,15 +1,11 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ""
-labels: ""
-assignees: ""
----
+# Bug Report
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+This guideline should help you in reporting bugs.
 
-**To Reproduce**
+## Describe the bug
+
+Describe in detail what happens when. Add as much information as you can.
+
 Steps to reproduce the behavior:
 
 1. Go to '...'
@@ -17,52 +13,34 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Environment (please complete the following information):**
-
-- OS: [e.g. Windows, macOS, Linux]
-- Rover Version [e.g. ]
-
-**Additional context**
-Add any other context about the problem here.
-
----
-
-name: Bug report
-about: Create a bug report to help us improve.
-title: ''
-labels: bug
-assignees: ''
-
----
-
-<!--
-Have any questions? Check out the contributing docs at https://gruntwork.notion.site/Gruntwork-Coding-Methodology-02fdcd6e4b004e818553684760bf691e,
-or ask in this issue and a Gruntwork core maintainer will be happy to help :)
--->
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior including the relevant Terraform/Terragrunt/Packer version number and any code snippets and module inputs you used.
+Add code if needed.
 
 ```hcl
 // paste code snippets here
 ```
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected behavior
 
-**Nice to have**
+A description of what you expected to happen.
 
-- [ ] Terminal output
-- [ ] Screenshots
+## Screenshots
 
-**Additional context**
-Add any other context about the problem here.
+Add as much screenshots as necessary to explain the bug. Alternatively add a video.
+
+## Environment
+
+- Operating System
+- Build and language
+- Terraform version
+- DSC Module version
+- ...
+
+## Additional resources
+
+Add anything else that might help us understand the problem.
+
+- Screenshots
+- Links
+- Videos
+- logs
+- Terminal outputs

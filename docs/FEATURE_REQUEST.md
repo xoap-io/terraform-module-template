@@ -1,59 +1,28 @@
----
-name: Feature request
-about: Submit a feature request for this repo.
-title: ""
-labels: enhancement
-assignees: ""
----
+# Feature Request
 
-<!--
-Have any questions? Check out the contributing docs at https://gruntwork.notion.site/Gruntwork-Coding-Methodology-02fdcd6e4b004e818553684760bf691e,
-or ask in this issue and a Gruntwork core maintainer will be happy to help :)
--->
+This guideline should help you in the creation process of a feature request.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Feature
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
-
----
-
-name: Feature Request
-about: Suggest an idea for this project
-title: ''
-labels: 'feature request'
-assignees: ''
-
----
-
-Have a question? Please checkout our [Slack Community](https://slack.cloudposse.com) or visit our [Slack Archive](https://archive.sweetops.com/).
-
-[![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
-
-## Describe the Feature
-
-A clear and concise description of what the bug is.
+A clear and detailed description of what feature you are missing or what is not working as expected.
 
 ## Expected Behavior
 
-A clear and concise description of what you expected to happen.
+What should happen by implementing your feature request.
 
 ## Use Case
 
-Is your feature request related to a problem/challenge you are trying to solve? Please provide some additional context of why this feature or capability will be valuable.
+Is your feature request related to a problem? Please provide additional context of why this feature or capability will be valuable.
+Add external references to further describe the use case.
 
-## Describe Ideal Solution
+## Describe Solution
 
-A clear and concise description of what you want to happen. If you don't know, that's okay.
+What would be the best case by implementing the feature request?
 
-## Alternatives Considered
+## Alternatives
 
-Explain what alternative solutions or features you've considered.
+Is there another way of implementing the feature request. What else did you think of?
 
-## Additional Context
+## Additional resources
 
-Add any other context or screenshots about the feature request here.
+Add all resources here that make your request clearer or that describe it better (links, blogs, articles or pictures).
