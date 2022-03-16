@@ -23,12 +23,12 @@ We recommend always having a license file, even if it is not an open source lice
 
 ## Files
 
-<MODULENAME>
+### MODULENAME
 
-├── README.md
-├── main.tf
-├── variables.tf
-├── outputs.tf
+- README.md
+- main.tf
+- variables.tf
+- outputs.tf
 
 For a simple module, this may be where all the resources are created.
 For a complex module, resource creation may be split into multiple files but any nested module calls should be in the main file.
