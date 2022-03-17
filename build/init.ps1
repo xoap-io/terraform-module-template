@@ -47,6 +47,20 @@ function FixReadme {
     $path = Get-Item  "$PSScriptRoot/.."
     ReplaceAllStringsInFile -SearchString "TERRAFORM-MODULE-TEMPLATE" -ReplaceString $path.Name.ToUpper() -FullPathToFile $file
 }
+
+function PrintAdditionalNeededConfig {
+    Write-Host "Please add following statements to your .bashrc or .zshrc"
+    Write-host "
+Optional:
+    export GOPATH=`$HOME/dev/go-workspace
+    export GOROOT=/usr/local/opt/go/libexec
+    export PATH=`$PATH:`$GOPATH/bin
+    export PATH=`$PATH:`$GOROOT/bin
+Required:
+    export TF_PLUGIN_CACHE_DIR=~/.terraform-cache
+    export KICS_QUERIES_PATH=/usr/local/opt/kics/share/kics/assets/queries"
+}
+
 if ($IsWindows) {
     Write-Error "This script is currently not able to setup windows systems"
     exit 1
@@ -57,6 +71,7 @@ if ($IsLinux) {
 }
 if ($IsMacOS) {
     InstallMacDependencies
+    PrintAdditionalNeededConfig
 }
 
 SetupPreCommit
