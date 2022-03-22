@@ -1,18 +1,17 @@
-# TERRAFORM-MODULE-TEMPLATE
-
 [![Maintained](https://img.shields.io/badge/Maintained%20by-XOAP-success)](https://xoap.io)
-[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.0.0-blue)](https://terraform.io)
+[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.1.6-blue)](https://terraform.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Guidelines](#guidelines)
-  - [Requirements](#requirements)
-  - [Providers](#providers)
-  - [Modules](#modules)
-  - [Resources](#resources)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Guidelines](#guidelines)
+- [Requirements](#requirements)
+- [Providers](#providers)
+- [Modules](#modules)
+- [Resources](#resources)
+- [Inputs](#inputs)
+- [Outputs](#outputs)
 
 ---
 
@@ -85,7 +84,9 @@ No resources.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_tags"></a> [tags](#input\_tags) | A list of Variables | `map(string)` | `{}` | no |
 
 ## Outputs
 
