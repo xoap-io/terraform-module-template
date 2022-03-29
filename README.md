@@ -1,18 +1,17 @@
-# TERRAFORM-MODULE-TEMPLATE
-
 [![Maintained](https://img.shields.io/badge/Maintained%20by-XOAP-success)](https://xoap.io)
-[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.0.0-blue)](https://terraform.io)
+[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.1.6-blue)](https://terraform.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Guidelines](#guidelines)
-  - [Requirements](#requirements)
-  - [Providers](#providers)
-  - [Modules](#modules)
-  - [Resources](#resources)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Guidelines](#guidelines)
+- [Requirements](#requirements)
+- [Providers](#providers)
+- [Modules](#modules)
+- [Resources](#resources)
+- [Inputs](#inputs)
+- [Outputs](#outputs)
 
 ---
 
@@ -61,6 +60,43 @@ Naming Conventions for Terraform resources must be used.
 
 ---
 
+## Usage
+
+### Installation
+
+For the first ime using this template necessary tools need to be installed.
+A script for PowerShell Core is provided under ./build/init.ps1
+
+This script will install following dependencies:
+
+- [pre-commit](https://github.com/pre-commit/pre-commit)
+- [terraform-docs](https://github.com/terraform-docs/terraform-docs)
+- [tflint](https://github.com/terraform-linters/tflint)
+- [tfsec](https://github.com/aquasecurity/tfsec)
+- [checkov](https://github.com/bridgecrewio/checkov)
+- [terrascan](https://github.com/accurics/terrascan)
+- [kics](https://github.com/Checkmarx/kics)
+
+This script configures:
+
+- global git template under ~/.git-template
+- global pre-commit hooks for prepare-commit-msg and commit-msg under ~/.git-template/hooks
+- github actions:
+  - linting and checks for pull requests from dev to master/main
+  - automatic tagging and release creation on pushes to master/main
+  - dependabot updates
+
+It currently supports the automated installation for macOS. Support for Windows and Linux will be available soon.
+
+### Synchronisation
+
+We provided a script under ./build/sync_template.ps1 to fetch the latest changes from this template repository.
+Please be aware that this is mainly a copy operation which means all your current changes have to be committed first and after running the script you have to merge this changes into your codebase.
+
+### Configuration
+
+---
+
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -69,7 +105,7 @@ Naming Conventions for Terraform resources must be used.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.1.6 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.2.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.5.0 |
 
 ## Providers
 
@@ -87,13 +123,11 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_context"></a> [context](#input\_context) | Default context for naming and tagging purpose | <pre>object({<br>    organization = string<br>    environment  = string<br>    account      = string<br>    product      = string<br>    tags         = map(string)<br>  })</pre> | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | A list of Variables | `map(string)` | `{}` | no |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_context"></a> [context](#output\_context) | Exported context from input variable |
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- markdownlint-disable -->
 <!-- prettier-ignore-end -->
