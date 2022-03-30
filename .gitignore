@@ -2,6 +2,9 @@
 mega-linter.log
 .idea
 
+# Local .tfsec directory
+.tfsec/
+
 # Local .terraform directories
 **/.terraform/*
 
