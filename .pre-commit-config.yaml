@@ -36,8 +36,6 @@ repos:
     hooks:
       - id: terraform_fmt
       - id: terraform_tflint
-        args:
-          - --args=--enable-plugin=aws
       - id: terraform_docs
         args:
           - --hook-config=--path-to-file=README.md
