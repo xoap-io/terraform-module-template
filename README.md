@@ -122,7 +122,7 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_tags"></a> [tags](#input\_tags) | A list of Variables | `map(string)` | `{}` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | A list of tags to apply to the resource | `map(string)` | `{}` | no |
 
 ## Outputs
 

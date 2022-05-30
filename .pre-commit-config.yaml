@@ -43,7 +43,6 @@ repos:
           - --hook-config=--create-file-if-not-exist=true
       - id: terraform_tfsec
       - id: terraform_validate
-      - id: infracost_breakdown
   - repo: https://github.com/Checkmarx/kics
     rev: v1.5.9
     hooks:
