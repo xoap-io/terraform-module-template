@@ -28,7 +28,6 @@ Please check the links for more info, including usage information and full docum
 - [XOAP Website](https://xoap.io)
 - [XOAP Documentation](https://docs.xoap.io)
 - [Twitter](https://twitter.com/xoap_io)
-- [LinkedIn](https://www.linkedin.com/company/xoap_io)
 
 ---
 
@@ -123,7 +122,7 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_tags"></a> [tags](#input\_tags) | A list of Variables | `map(string)` | `{}` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | A list of tags to apply to the resource | `map(string)` | `{}` | no |
 
 ## Outputs
 
