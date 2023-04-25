@@ -64,7 +64,7 @@ Naming Conventions for Terraform resources must be used.
 ---
 
 ## Share the Love
-Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)! (it helps us a lot).
+Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/terraform-module-template)! It helps us a lot.
 
 ---
 
