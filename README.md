@@ -6,6 +6,10 @@
 
 - [Introduction](#introduction)
 - [Guidelines](#guidelines)
+- [Share the Love](#share-the-love)
+- [Contributing](#contributing)
+- [Bug Reports and Feature Requests](#bug-reports--feature-requests)
+- [Developing](#developing)
 - [Requirements](#requirements)
 - [Providers](#providers)
 - [Modules](#modules)
@@ -19,9 +23,9 @@
 
 This is a template for Terraform modules.
 
-It is part of our XOAP Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
+It is part of our [XOAP](https://xoap.io) Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
 
-We have a lot of Terraform modules that are Open Source and maintained by the XOAP staff.
+We have a lot of Terraform modules that are Open Source and maintained by the [XOAP](https://xoap.io) staff.
 
 Please check the links for more info, including usage information and full documentation:
 
@@ -59,6 +63,33 @@ Naming Conventions for Terraform resources must be used.
 
 ---
 
+## Share the Love
+Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)! (it helps us a lot).
+
+---
+
+## Contributing
+
+### Bug Reports & Feature Requests
+
+Please use the issue tracker to report any bugs or file feature requests.
+
+### Developing
+
+If you are interested in being a contributor and want to get involved in developing this project, we would love to hear from you! Email us.
+
+PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
+
+- Fork the repo on GitHub
+- Clone the project to your own machine
+- Commit changes to your own branch
+- Push your work back up to your fork
+- Submit a Pull Request so that we can review your changes
+
+> NOTE: Be sure to merge the latest changes from "upstream" before making a pull request!
+
+---
+
 ## Usage
 
 ### Installation
@@ -80,7 +111,7 @@ This script configures:
 
 - global git template under ~/.git-template
 - global pre-commit hooks for prepare-commit-msg and commit-msg under ~/.git-template/hooks
-- github actions:
+- GitHub actions:
   - linting and checks for pull requests from dev to master/main
   - automatic tagging and release creation on pushes to master/main
   - dependabot updates
