@@ -8,8 +8,7 @@ $brewPackages = @(
     "checkov",
     "terrascan",
     "golang",
-    "Checkmarx/tap/kics"
-
+    "docker"
 )
 function ReplaceAllStringsInFile($SearchString, $ReplaceString, $FullPathToFile) {
     $content = [System.IO.File]::ReadAllText("$FullPathToFile").Replace("$SearchString", "$ReplaceString")
