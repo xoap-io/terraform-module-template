@@ -6,6 +6,10 @@
 
 - [Introduction](#introduction)
 - [Guidelines](#guidelines)
+- [Share the Love](#share-the-love)
+- [Contributing](#contributing)
+- [Bug Reports and Feature Requests](#bug-reports--feature-requests)
+- [Developing](#developing)
 - [Requirements](#requirements)
 - [Providers](#providers)
 - [Modules](#modules)
@@ -19,43 +23,80 @@
 
 This is a template for Terraform modules.
 
-It is part of our XOAP Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
+It is part of our [XOAP](https://xoap.io) Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
 
-We have a lot of Terraform modules that are Open Source and maintained by the XOAP staff.
+We have a lot of Terraform modules that are Open Source and maintained by the [XOAP](https://xoap.io) staff.
 
 Please check the links for more info, including usage information and full documentation:
 
 - [XOAP Website](https://xoap.io)
 - [XOAP Documentation](https://docs.xoap.io)
 - [Twitter](https://twitter.com/xoap_io)
+- [LinkedIn](https://www.linkedin.com/company/xoap_io)
 
 ---
 
 ## Guidelines
 
-We are using the following guidelines to write code and make it easier for everyone to follow a destinctive guideline. Please check these links before starting to work on changes.
+We are using the following guidelines to write code and make it easier for everyone to follow a distinctive guideline.
+Please check these links before starting to work on changes.
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-Git Naming Conventions are an important part of the development process. They descrtibe how Branched, Commit Messages, Pull Requests and Tags should look like to make the easily understandebla for everybody in the development chain.
+Git Naming Conventions are an important part of the development process.
+They describe how Branches, Commit Messages,
+Pull Requests and Tags should look like to make them easily understandable for everybody in the development chain.
 
 [Git Naming Conventions](https://namingconvention.org/git/)
 
-he Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
+He Conventional Commits specification is a lightweight convention on top of commit messages.
+It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-The better a Pull Request description is, the better a review can understand and decide on how to review the changes. This improves implementation speed and reduces communication between the requester and the reviewer resulting in much less overhead.
+The better a Pull Request description is, the better a review can understand and decide on how to review the changes.
+This improves implementation speed and reduces communication between the requester,
+and the reviewer is resulting in much less overhead.
 
-[Wiriting A Great Pull Request Description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description/)
+[Writing A Great Pull Request Description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description/)
 
-Versioning is a crucial part for Terraform Stacks and Modules. Without version tags you cannot clearly create a stable environment and be sure that your latest changes won't crash your production environment (sure it still can happen, but we are trying our best to implement everything that we can to reduce the risk)
+Versioning is a crucial part for Terraform Stacks and Modules.
+Without version tags you cannot clearly create a stable environment
+and be sure that your latest changes will not crash your production environment (sure it still can happen,
+but we are trying our best to implement everything that we can to reduce the risk)
 
 [Semantic Versioning](https://semver.org)
 
-Naming Conventions for Terraform resources must be used.
-
 [Terraform Naming Conventions](https://www.terraform-best-practices.com/naming)
+
+---
+
+## Share the Love
+Like this project?
+Please give it a ★ on [our GitHub](https://github.com/xoap-io/terraform-module-template)!
+It helps us a lot.
+
+---
+
+## Contributing
+
+### Bug Reports & Feature Requests
+
+Please use the issue tracker to report any bugs or file feature requests.
+
+### Developing
+
+If you are interested in being a contributor and want to get involved in developing this project, we would love to hear from you! Email us.
+
+PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
+
+- Fork the repo on GitHub
+- Clone the project to your own machine
+- Commit changes to your own branch
+- Push your work back up to your fork
+- Submit a Pull Request so that we can review your changes
+
+> NOTE: Be sure to merge the latest changes from "upstream" before making a pull request!
 
 ---
 
@@ -63,10 +104,10 @@ Naming Conventions for Terraform resources must be used.
 
 ### Installation
 
-For the first ime using this template necessary tools need to be installed.
-A script for PowerShell Core is provided under ./build/init.ps1
+For the first time using this template, necessary tools need to be installed.
+A script to prepare a Mac is provided under ./build/init.ps1
 
-This script will install following dependencies:
+This script will install the following dependencies:
 
 - [pre-commit](https://github.com/pre-commit/pre-commit)
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs)
@@ -80,7 +121,7 @@ This script configures:
 
 - global git template under ~/.git-template
 - global pre-commit hooks for prepare-commit-msg and commit-msg under ~/.git-template/hooks
-- github actions:
+- GitHub actions:
   - linting and checks for pull requests from dev to master/main
   - automatic tagging and release creation on pushes to master/main
   - dependabot updates
@@ -90,7 +131,8 @@ It currently supports the automated installation for macOS. Support for Windows 
 ### Synchronisation
 
 We provided a script under ./build/sync_template.ps1 to fetch the latest changes from this template repository.
-Please be aware that this is mainly a copy operation which means all your current changes have to be committed first and after running the script you have to merge this changes into your codebase.
+Please be aware that this is mainly a copy operation which means all your current changes have to be committed first,
+and after running the script, you have to merge these changes into your codebase.
 
 ### Configuration
 
