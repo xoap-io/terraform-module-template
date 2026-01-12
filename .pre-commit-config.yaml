@@ -1,13 +1,13 @@
 ---
 repos:
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v2.4.0
+    rev: v3.6.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -34,7 +34,7 @@ repos:
         args:
           - -b main
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.92.0
+    rev: v1.96.2
     hooks:
       - id: terraform_fmt
       - id: terraform_tflint
@@ -46,11 +46,11 @@ repos:
       - id: terraform_tfsec
       - id: terraform_validate
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.28.6
+    rev: 0.30.0
     hooks:
       - id: check-github-workflows
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.1.0
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
         stages: [commit]

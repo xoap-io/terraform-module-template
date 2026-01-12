@@ -1,5 +1,5 @@
 [![Maintained](https://img.shields.io/badge/Maintained%20by-XOAP-success)](https://xoap.io)
-[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.1.6-blue)](https://terraform.io)
+[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.10.0-blue)](https://terraform.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Table of Contents
